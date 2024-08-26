@@ -76,7 +76,7 @@ body{
     font-size: 3rem;
 }
 .lt{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 5.5rem;
 }
 .lp-header-content p{
@@ -86,90 +86,20 @@ body{
     padding: 0.6rem;
     border: none;
     border-radius: 5px;
-    background: #374a3b;
+    background: #fff;
 }
 
 /* end */
 
-/* flight stay selection section */
+/* flight details*/
 
-.selection-panel{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto 2rem;
-    border-radius: 20px;
-    box-shadow: 0 5px 5px #ccc;
-    padding: 2.5rem;
-    position: absolute;
-    top: 35rem;
-    right: 9rem;
-    background: #fff;
-}
-.flight-stay-tabs{
-    width:  100%;
-    display: flex;
-}
-.stays{
-    margin-left: 1.5rem;
-}
-.flights, .stays{
-    display: flex;
-    text-align: center;
-}
-.flights a, .stays a{
-     color: #000;
-     text-decoration: none;
-     font-weight: 700;
-}
-.bar{
-    border: 1px solid #000;
-    margin-left: 1.5rem;
-}
-.flights-details{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.flight-destination-input{
-    display: flex;
-    border: 1px solid #000;
-}
-.flight-destination-input input{
-    border: none;
-    font-size: 1rem;   
-    padding: 1rem 2rem;
-}
-.flight-ways select{
-    border: 1px solid #000;
-    padding: 1rem 2rem;
-    font-size: 1rem;   
-}
-.depart-return-date input{
-    font-size: 1rem;   
-    border: 1px solid #000;
-    padding: 1rem 3rem;
-}
-.passenger-class input{
-    font-size: 1rem;   
-    border: 1px solid #000;
-    padding: 1rem 3rem;
-}
-    
+/* .lp-flight-details{
+    font-family: "Montserrat";
+}    */
 
-.promo-code{
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-.promo-code-type{
-    margin-right: 2rem;
-    text-decoration: none;
-    color: #000;
-}
+/* .flight-tag{
+    font-family: "Montserrat";
+} */
 
 /* end */
 
@@ -177,7 +107,7 @@ body{
 .places-section{
     width: 80%;
     margin:0 auto ;
-    margin-top: 20rem;
+    margin-top: 12rem;
     align-items: center;
 }
 
@@ -371,7 +301,80 @@ body{
 
 @media (max-width:900px) {
  
+/* Flight Stay Seleciton */
+.selection-panel{
+    width: 100%;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.flight-stay-tabs{
+    width:  100%;
+    display: flex;
+}
+.stays{
+    margin-left: 1.5rem;
+}
+.flights, .stays{
+    display: flex;
+    text-align: center;
+}
+.flights a, .stays a{
+     color: #000;
+     text-decoration: none;
+     font-weight: 700;
+}
+.bar{
+    border: 1px solid #000;
+    margin-left: 1.5rem;
+}
+.flights-details{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flight-destination-input{
+    display: flex;
+    border: 1px solid #000;
+}
+.flight-destination-input input{
+    border: none;
+    font-size: 1rem;   
+    padding: 1rem 2rem;
+}
+.flight-ways select{
+    border: 1px solid #000;
+    padding: 1rem 2rem;
+    font-size: 1rem;   
+}
+.depart-return-date input{
+    font-size: 1rem;   
+    border: 1px solid #000;
+    padding: 1rem 3rem;
+}
+.passenger-class input{
+    font-size: 1rem;   
+    border: 1px solid #000;
+    padding: 1rem 3rem;
+}
+    
 
+.promo-code{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.promo-code-type{
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+/* end */
 
 }
 

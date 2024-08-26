@@ -1,6 +1,6 @@
 import ReviewImg1 from "../src/assets/reviews places/review place 1.png"
 import ReviewImg2 from "../src/assets/reviews places/review place 2.png"
-import ReviewImg3 from "../src/assets/reviews places/review place 3.png"
+import ReviewImg3 from "../src/assets/reviews places/reviewplace3.png"
 
 
 
@@ -20,6 +20,24 @@ const Reviewers = [
     { 
         id : 3,
         name : "Eliot",
+        revHead:"“A real sense of community, nurtured”",
+        img : ReviewImg3,
+    },
+    { 
+        id : 4,
+        name : "John Doe",
+        revHead:"“A real sense of community, nurtured”",
+        img : ReviewImg3,
+    },
+    { 
+        id : 5,
+        name : "Zhen",
+        revHead:"“A real sense of community, nurtured”",
+        img : ReviewImg3,
+    },
+    { 
+        id : 6,
+        name : "Rony",
         revHead:"“A real sense of community, nurtured”",
         img : ReviewImg3,
     },

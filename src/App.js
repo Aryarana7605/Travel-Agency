@@ -1,21 +1,20 @@
-import LpCarousel from './components/LpCarousel';
 import LpFooter from './components/LpFooter';
+import LpForm from './components/LpForm';
 import Lpheader from './components/Lpheader';
 import LpMainOfferings from './components/LpMainOfferings';
 import Lpplaces from './components/Lpplaces';
-// import SwiperCarousel from './components/LpReviews';
-import Lpselection from './components/Lpselection';
 import LpSubscribe from './components/LpSubscribe';
+import Swiperz from './components/swiper/swiper';
+
 
 function App() {
   return (
     <div className="App">
       <Lpheader/>
-      <Lpselection/>
+      <LpForm/>
       <Lpplaces/>
       <LpMainOfferings/>
-      <LpCarousel/>
-      {/* <SwiperCarousel/> */}
+      <Swiperz/>      
       <LpSubscribe/>
       <LpFooter/>
     </div>

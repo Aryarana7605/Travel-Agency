@@ -1,14 +1,5 @@
 import React from 'react'
 import '../components/lpStyle.css'
-// import IstanbulImg from "../assets/places/Rectangle 3.png"
-// import SydneyImg from "../assets/places/Rectangle 3-1.png"
-// import BakuImg from "../assets/places/Rectangle 3-2.png"
-// import MaleImg from "../assets/places/Rectangle 3-3.png"
-// import ParisImg from "../assets/places/Rectangle 3-4.png"
-// import NewYorkImg from "../assets/places/Rectangle 4.png"
-// import LondonImg from "../assets/places/Rectangle 4-1.png"
-// import TokyoImg from "../assets/places/Rectangle 4-2.png"
-// import DubaiImg from "../assets/places/Rectangle 4-3.png"
 import HOTELS from '../Details'
 
 
@@ -29,7 +20,7 @@ const Lpplaces = () => {
         {HOTELS.map((hotel)=>(
             
         <div className="place-card">
-            <img src={hotel.img} alt="." />
+            <img src={hotel.image} alt={hotel.name} />
             <div className="place-con">
                 <p>{hotel.name}</p>
                 <ul className="place-features">
