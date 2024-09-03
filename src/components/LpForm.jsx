@@ -1,8 +1,5 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import "../index.css"
-import "../components/lpStyle.css"
 import { IoAirplane } from "react-icons/io5";
 import { IoBed } from "react-icons/io5";
 import MenuItem from '@mui/material/MenuItem';
@@ -32,7 +29,7 @@ const pickHandler = (event)=>{
 }
 
       return (
-<div className="lp-flight-details w-4/5 m-auto shadow p-8 rounded-2xl bg-white absolute bottom-40 left-48" >
+<div className="lp-flight-details w-full lg:w-4/5 m-auto shadow p-8 rounded-2xl bg-white lg:absolute bottom-40 left-48" >
 
      <div className="lpform-tabs flex mb-8">
          <i className='flex items-center'><IoAirplane /><a className='flight-tag font-bold ml-2 font-sans' href=".">Flights</a></i>
@@ -41,7 +38,7 @@ const pickHandler = (event)=>{
      </div>
 
     <Box component="form" className='mb-8'>
-      <div className='flex justify-evenly'>
+      <div className='lg:flex justify-evenly'>
         <TextField
           required
           id="outlined-required"

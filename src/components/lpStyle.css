@@ -10,9 +10,6 @@ body{
 }
 
 /* reusable classes */
-.wrapper{
-    padding: 4rem 4rem;
-}
 .mb{
     margin-bottom: 2rem;
 }
@@ -40,6 +37,7 @@ body{
     height: 65vh;
     border-radius: 20px;
     padding: 1.5rem;
+    margin: 0 auto;
     margin-bottom: 2rem;
 }
 
@@ -62,10 +60,6 @@ body{
     list-style: none;
     padding:0 1rem;
 }
-.lp-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-}
 .lp-header-content{
     text-align: center;
     color: #fff;
@@ -82,24 +76,13 @@ body{
 .lp-header-content p{
     font-size: 1.75rem;
 }
-.header-signup-btn a{
+.header-signup-btn{
+    cursor: pointer;
     padding: 0.6rem;
     border: none;
     border-radius: 5px;
     background: #fff;
 }
-
-/* end */
-
-/* flight details*/
-
-/* .lp-flight-details{
-    font-family: "Montserrat";
-}    */
-
-/* .flight-tag{
-    font-family: "Montserrat";
-} */
 
 /* end */
 
@@ -143,6 +126,7 @@ body{
     margin: 1rem;
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
+    width: max-content;
 }
 .place-con{
     margin-left: 2rem;
@@ -235,13 +219,9 @@ body{
     left: 10rem;
 }
 
-.subscribe-content h2{
-    font-size: 3rem;
-}
 .subscribe-content h4{
-    color: #374a3b;
+    color: #112211;
     margin-top: 1rem;
-    margin-bottom: 0.2rem;
 }
 .subscribe-content p{
     color: #374a3b;
@@ -273,6 +253,7 @@ body{
     padding-top: 15rem;
     background: #8dd3bb;
     display: flex;
+    align-items: first baseline;
     justify-content: space-evenly;
     border-radius: 20px;
 }
@@ -291,6 +272,8 @@ body{
 }
 .footer-sec li{
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -299,12 +282,79 @@ body{
 
 /* Media query */
 
-@media (max-width:900px) {
+@media (max-width:768px) {
+    body{
+        padding: 0;
+    }
  
+/* Landing page nav bar */
+
+.lp-header{
+    background: linear-gradient(90deg, #00000038, #0000004f),url(../assets/LPheadbg.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 65vh;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.lp-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 2.5rem;
+}
+.lp-nav ul{
+    display: flex;
+    align-items: center;
+}
+.lp-booking-nav-ul-1 li{
+    display: flex;
+    align-items: center;
+}
+.lp-nav ul li{
+    list-style: none;
+    padding:0 1rem;
+}
+.lp-header-content{
+    text-align: center;
+    color: #fff;
+    margin-top: 5rem;
+}
+.ho{
+    font-weight: 500;
+    font-size: 3rem;
+}
+.lt{
+    font-weight: 600;
+    font-size: 5.5rem;
+}
+.lp-header-content p{
+    font-size: 1.75rem;
+}
+.header-signup-btn{
+    cursor: pointer;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+}
+/* end */
+
 /* Flight Stay Seleciton */
+
+.lp-flight-details{
+    width: 100%;
+    position: none;
+}
+
 .selection-panel{
     width: 100%;
-    position: relative;
+    position: none;
     right: 0;
     left: 0;
     top: 0;
@@ -374,6 +424,47 @@ body{
     color: #000;
 }
 
+/* end */
+/* Trips Places1 */
+.places-section{
+    width: 90%;
+    margin:2rem auto ;
+}
+
+.places-card-row{
+    grid-template-columns: auto auto;
+}
+
+/* end */
+
+
+/* subscribe sec */
+.subscribe-section{
+    width: max-content;
+    margin: 5rem auto 0;
+    padding: 1rem 1.5rem 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #cdeae1;
+    position: absolute;
+    top : -2rem;
+    left: 0;
+}
+/* end */
+
+
+/* footer */
+.footer{
+    margin-top: 15rem;
+    width: max-content;
+    padding: 5rem;
+    padding-top: 15rem;
+    background: #8dd3bb;
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-evenly;
+}
 /* end */
 
 }

@@ -9,12 +9,12 @@ const LpSubscribe = () => {
     <div className='subscribe-section'>
 
     <div className="subscribe-content">
-        <h2>Subscribe</h2>
-        <h2>Newsletter</h2>
-        <h4>The Travel</h4>
-        <p>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
-        <form>
-            <input className='sub-input' type="text" /> <button className='sub-btn'>Subscribe</button>
+        <h2 className='text-5xl font-semibold'>Subscribe</h2>
+        <h2 className='text-5xl font-semibold'>Newsletter</h2>
+        <h4 className='font-semibold text-2xl'>The Travel</h4>
+        <p className='font-semibold'>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+        <form className='mb-8'>
+            <input className='sub-input pl-4' type="text" placeholder='Your email address'/> <button className='sub-btn font-semibold'>Subscribe</button>
         </form>
     </div>
       

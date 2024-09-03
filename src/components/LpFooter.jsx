@@ -9,8 +9,8 @@ import { FaYoutube } from "react-icons/fa";
 
 const LpFooter = () => {
   return (
-    <div className='footer'>
-<div className="footer-sec footer-sec-1">
+    <div className='footer '>
+<div className="footer-sec footer-sec-1 items-center">
     <img className='logo' src={footerLogo} alt="golobeLogo"/>
     <ul className="footer-social-logos text-2xl mt-2">
     <li><a href="."><TiSocialFacebookCircular /></a></li>

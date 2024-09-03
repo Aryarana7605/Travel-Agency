@@ -1,14 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import App from "./App";
+import Home from "../src/components/Home";
+import Login from "../src/components/register/Login";
+import Signup from "../src/components/register/Signup"
+import Setpass from "../src/components/register/SetPass"
+import ForgotPass from "../src/components/register/ForgotPass"
+import SetPass from "../src/components/register/SetPass"
+import VerifyCode from "../src/components/register/VerifyCode.jsx";
+import AddPayment from "./components/register/AddPayment.jsx";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      <Route index={true} path="/" element={<Home/>} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/set-password" element={<Setpass />} />
+      <Route path="/forgot-password" element={<ForgotPass/>} />
+      <Route path="/set-password" element={<SetPass/>} />
+      <Route path="/verify-code" element={<VerifyCode/>} />
+      <Route path="/add-payment-method" element={<AddPayment/>} />
+    </Route>
+  )
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+root.render(<RouterProvider router={router} />);

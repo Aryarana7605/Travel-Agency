@@ -1,8 +1,6 @@
-import React, { useRef, useState } from 'react';
 import googleLogo from '../../icons/google logo.png'
 // import Reviewers from "../../reviewer"
 import { IoIosStar } from "react-icons/io";
-import "../../index.css"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -12,7 +10,7 @@ import 'swiper/css/pagination';
 import "./swiper.css"
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+// import { Pagination } from 'swiper/modules';
 // images
 import revImg1 from "../../assets/reviews places/review place 1.png"
 import revImg2 from "../../assets/reviews places/review place 2.png"
@@ -23,14 +21,13 @@ import revImg3 from "../../assets/reviews places/reviewplace3.png"
 
 export default function Swiperz() {
   return (
-    <>
       <Swiper
         slidesPerView={3}
         spaceBetween={60}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        // modules={[Pagination]}
         className="mySwiper"
       >
         <SwiperSlide >
@@ -111,6 +108,5 @@ export default function Swiperz() {
             </SwiperSlide>
         
       </Swiper>
-    </>
   );
 }

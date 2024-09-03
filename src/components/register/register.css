@@ -1,0 +1,13 @@
+
+
+
+@media (max-width : 900px){
+      /* login */
+.login-fomr{
+    flex-direction: column;
+}
+.login-swiper-sec{
+    display: hidden;
+}
+      /*  */
+}
