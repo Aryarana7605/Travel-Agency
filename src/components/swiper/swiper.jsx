@@ -21,19 +21,29 @@ import revImg3 from "../../assets/reviews places/reviewplace3.png"
 
 export default function Swiperz() {
   return (
+
+    <div className="swiper-p p-8 m-4 mt-6">
+<div className="swiper-header flex justify-between">
+    <div className="swiper-head-con">
+<h1 className='text-3xl font-semibold mb-2'>Reviews</h1>
+<p className='text-base mb-2'>What people says about Golobe facilities.</p>
+</div>
+<button className='places-nav-btn mt-2 lg:mt-0 text-base px-4 py-0 bg-transparent border-2 border-[#8dd3bb] rounded'>See All</button>
+</div>
+
       <Swiper
         slidesPerView={3}
         spaceBetween={60}
         pagination={{
           clickable: true,
         }}
-        // modules={[Pagination]}
         className="mySwiper"
       >
         <SwiperSlide >
 
+
                 {/* {Reviewers.map((rev)=>( */}
-             <div className="slider-card w-full p-4   rounded-3xl">
+             <div className="slider-card w-full p-4 rounded-3xl">
 
                 <h2 className='text-3xl mb-8'>“A real sense of community, nurtured”</h2>
                 <p className='text-xl text-gray-500'>Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for ..</p>
@@ -108,5 +118,6 @@ export default function Swiperz() {
             </SwiperSlide>
         
       </Swiper>
+      </div>
   );
 }

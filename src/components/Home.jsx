@@ -8,7 +8,7 @@ import LpMainOfferings from './LpMainOfferings';
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className='home bg-white'>
       <Lpheader/>
       <LpForm/>
       <Lpplaces/>

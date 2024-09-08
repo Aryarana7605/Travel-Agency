@@ -5,20 +5,21 @@ import Mailbox from '../assets/mailbox.png'
 
 const LpSubscribe = () => {
   return (
-    <div className="subscribe-section-p">
-    <div className='subscribe-section'>
+    <div className="subscribe-section-p lg:relative w-full mb-4">
+    <div className='subscribe-section w-full lg:w-4/5 lg:mt-20 lg:mx-auto p-4 lg:pt-4 px-6 rounded-3xl flex justify-between bg-[#cdeae1] relative lg:absolute lg:top-[-1rem] lg:left-40'>
 
     <div className="subscribe-content">
-        <h2 className='text-5xl font-semibold'>Subscribe</h2>
-        <h2 className='text-5xl font-semibold'>Newsletter</h2>
-        <h4 className='font-semibold text-2xl'>The Travel</h4>
-        <p className='font-semibold'>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
-        <form className='mb-8'>
-            <input className='sub-input pl-4' type="text" placeholder='Your email address'/> <button className='sub-btn font-semibold'>Subscribe</button>
+        <h2 className=' text-3xl lg:text-5xl font-semibold'>Subscribe</h2>
+        <h2 className=' text-3xl lg:text-5xl font-semibold'>Newsletter</h2>
+        <h4 className='font-semibold text-xl lg:text-2xl text-black lg:mt-4'>The Travel</h4>
+        <p className='font-semibold text-[#374a3b]'>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+        <form className=''>
+            <input className='sub-input mt-6 py-4 px-1 w-64 lg:w-96 pl-4 border-none rounded-md text-base ' type="text" placeholder='Your email address'/> 
+            <button className='sub-btn font-semibold p-4 text-white bg-[#112211] ml-2 rounded-lg border-none'>Subscribe</button>
         </form>
     </div>
       
-    <div className="mailbox">
+    <div className="mailbox hidden lg:block ">
         <img src={Mailbox} alt="mailbox"/>
     </div>
 

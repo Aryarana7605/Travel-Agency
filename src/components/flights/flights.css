@@ -1,0 +1,39 @@
+.t-card-1{
+    background: url("../../assets//flights/card1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.t-card-2{
+    background: url("../../assets//flights/card2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.t-card-3{
+    background: url("../../assets//flights/card3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.t-card-4{
+    background: url("../../assets//flights/card4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ 
+/* map places */
+.fmap-places{
+    background: url("../../assets/flights/placesmap.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* end */
+
+@media (max-width:768px){
+    .fmap-places{
+        background:none;
+    }
+}

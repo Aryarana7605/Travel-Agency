@@ -29,53 +29,69 @@ const pickHandler = (event)=>{
 }
 
       return (
-<div className="lp-flight-details w-full lg:w-4/5 m-auto shadow p-8 rounded-2xl bg-white lg:absolute bottom-40 left-48" >
+<div className="lp-flight-details mb-4 w-full lg:w-4/5 m-auto shadow p-4 lg:p-8 rounded-2xl bg-white lg:absolute lg:bottom-40 lg:left-48">
+  
+  <div className="lpform-tabs flex mb-8 justify-around lg:justify-start">
+    <i className='flex items-center p-2 bg-[#8dd3bb] rounded lg:bg-transparent text-xl'>
+      <IoAirplane />
+      <a className='flight-tag font-bold ml-2 font-sans' href=".">Flights</a>
+    </i>
+    <span className='hidden lg:inline-block bar border-2 border-gray-400 mx-4 lg:mx-8 rounded'></span>
+    <i className='flex items-center p-2 bg-[#8dd3bb] rounded lg:bg-transparent text-xl'>
+      <IoBed />
+      <a className='font-bold ml-2 font-sans' href=".">Stays</a>
+    </i>
+  </div>
 
-     <div className="lpform-tabs flex mb-8">
-         <i className='flex items-center'><IoAirplane /><a className='flight-tag font-bold ml-2 font-sans' href=".">Flights</a></i>
-         <span className='bar border-2 border-black ml-8'></span>
-         <i className='flex items-center ml-8'><IoBed /><a className='font-bold ml-2 font-sans' href=".">Stays</a></i>
-     </div>
-
-    <Box component="form" className='mb-8'>
-      <div className='lg:flex justify-evenly'>
-        <TextField
-          required
-          id="outlined-required"
-          label="Required"
-          defaultValue="Lahore - Karachi"
-          style={{width:"20%"}}
-          />
-          <TextField
-          select
-          label="Trip"
-          value={pick}
-          defaultValue="Return"
-          onChange={pickHandler}
-          style={{width:"10%"}}
-        >
-            {options.map((option) => (
-            <MenuItem key={option.id} value={option.value}>
+  <Box component="form" className='mb-8 w-full h-full'>
+    <div className='flex flex-col lg:flex-row lg:justify-evenly w-full h-full space-y-4 lg:space-y-0'>
+      <TextField
+        required
+        id="outlined-required"
+        label="From - To"
+        defaultValue="Lahore - Karachi"
+        className="w-full lg:w-1/5"
+      />
+      <TextField
+        select
+        label="Trip"
+        value={pick}
+        defaultValue="Return"
+        onChange={pickHandler}
+        className="w-full lg:w-1/5"
+      >
+        {options.map((option) => (
+          <MenuItem key={option.id} value={option.value}>
             {option.value}
-            </MenuItem>
-          ))}
-        </TextField>
-        <TextField
-          required
-          id="outlined-required"
-          label="Depart - Return"
-          defaultValue="07 Nov 22 - 13 Nov 22" style={{width:"20%"}}/>
-        <TextField
-          required
-          id="outlined-required"
-          label="Passenger - Class"
-          defaultValue="1 Passenger, Economy" style={{width:"20%"}}/>
-      </div>
-    </Box>
-    <div className="promo-code flex justify-end items-center">
-  <a href="." className='promo-code-type mr-8 flex items-center'> <span className='mr-2'><FaPlus/></span> Add Promo Code</a>
-  <a className='common-btn' href="."><span className='flex items-center mr-2'><FaPaperPlane /></span> Show Flights</a>
+          </MenuItem>
+        ))}
+      </TextField>
+      <TextField
+        required
+        id="outlined-required"
+        label="Depart - Return"
+        defaultValue="07 Nov 22 - 13 Nov 22"
+        className="w-full lg:w-1/5"
+      />
+      <TextField
+        required
+        id="outlined-required"
+        label="Passenger - Class"
+        defaultValue="1 Passenger, Economy"
+        className="w-full lg:w-1/5"
+      />
     </div>
-    </div>
+  </Box>
+
+  <div className="promo-code flex flex-col lg:flex-row justify-center lg:justify-end items-center space-y-4 lg:space-y-0">
+    <button  className='promo-code-type flex items-center mr-4'>
+      <span className='mr-2'><FaPlus/></span> Add Promo Code
+    </button>
+    <a className='common-btn flex items-center p-4 border-none bg-[#8dd3bb] text-black font-semibold rounded-md' href=".">
+      <span className='flex items-center mr-2'><FaPaperPlane /></span> Show Flights
+    </a>
+  </div>
+</div>
+
   );
 }

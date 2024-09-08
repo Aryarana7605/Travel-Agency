@@ -15,6 +15,7 @@ import ForgotPass from "../src/components/register/ForgotPass"
 import SetPass from "../src/components/register/SetPass"
 import VerifyCode from "../src/components/register/VerifyCode.jsx";
 import AddPayment from "./components/register/AddPayment.jsx";
+import Flights from "./components/flights/Flights.jsx";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
       <Route path="/set-password" element={<SetPass/>} />
       <Route path="/verify-code" element={<VerifyCode/>} />
       <Route path="/add-payment-method" element={<AddPayment/>} />
+      <Route path="/flights" element={<Flights/>} />
     </Route>
   )
 );
