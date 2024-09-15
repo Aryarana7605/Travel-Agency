@@ -1,12 +1,12 @@
 import React from 'react'
-import '../components/lpStyle.css'
-import Mailbox from '../assets/mailbox.png'
+import './lpStyle.css'
+import Mailbox from '../../assets/mailbox.png'
 
 
 const LpSubscribe = () => {
   return (
     <div className="subscribe-section-p lg:relative w-full mb-4">
-    <div className='subscribe-section w-full lg:w-4/5 lg:mt-20 lg:mx-auto p-4 lg:pt-4 px-6 rounded-3xl flex justify-between bg-[#cdeae1] relative lg:absolute lg:top-[-1rem] lg:left-40'>
+    <div className='subscribe-section w-full lg:w-4/5 lg:mt-20 lg:pb-0 lg:mx-auto p-4 lg:pt-4 px-6 rounded-3xl flex justify-between bg-[#cdeae1] relative lg:absolute lg:top-[-1rem] lg:left-40'>
 
     <div className="subscribe-content">
         <h2 className=' text-3xl lg:text-5xl font-semibold'>Subscribe</h2>

@@ -1,15 +1,15 @@
 import Fheader from './Fheader'
-import LpForm from '../LpForm'
 import Fmap from './Fmap'
 import FtravelCardSec from './FtravelCardSec'
-import LpFooter from "../LpFooter"
-import LpSubscribe from "../LpSubscribe"
 import FbookSec from './FbookSec'
+import LpForm from '../Home/LpForm'
+import LpFooter from '../Home/LpFooter'
+import LpSubscribe from '../Home/LpSubscribe'
 
 
 const Flights = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white overflow-hidden'>
       <Fheader/>
       <LpForm/>
       <Fmap/>

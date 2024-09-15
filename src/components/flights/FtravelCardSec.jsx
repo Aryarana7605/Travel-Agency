@@ -23,11 +23,11 @@ const FtravelCardSec = () => {
       <div className="travel-card-con w-full">
         <div className="travel-card-head text-white flex justify-between items-end">
           <div className="description">
-            <h2 className='text-xl lg:text-3xl font-semibold'>Melbourne</h2>
-            <p className='text-sm lg:text-base font-semibold'>An amazing journey</p>
+            <h2 className='text-xl lg:text-xl font-semibold'>Melbourne</h2>
+            <p className='text-sm lg:text-base '>An amazing journey</p>
           </div>
           <div className="price">
-            <h2 className='font-semibold text-xl lg:text-3xl'>$700</h2>
+            <h2 className='font-semibold text-xl lg:text-xl'>$700</h2>
           </div>
         </div>
         <button className='w-full p-2 rounded mt-2 border-none bg-[#8dd3bb] text-sm lg:text-base'>
@@ -40,11 +40,11 @@ const FtravelCardSec = () => {
       <div className="travel-card-con w-full">
         <div className="travel-card-head text-white flex justify-between items-end">
           <div className="description">
-            <h2 className='text-xl lg:text-3xl font-semibold'>Melbourne</h2>
-            <p className='text-sm lg:text-base font-semibold'>An amazing journey</p>
+            <h2 className='text-xl lg:text-xl font-semibold'>Melbourne</h2>
+            <p className='text-sm lg:text-base '>An amazing journey</p>
           </div>
           <div className="price">
-            <h2 className='font-semibold text-xl lg:text-3xl'>$700</h2>
+            <h2 className='font-semibold text-xl lg:text-xl'>$700</h2>
           </div>
         </div>
         <button className='w-full p-2 rounded mt-2 border-none bg-[#8dd3bb] text-sm lg:text-base'>
@@ -57,11 +57,11 @@ const FtravelCardSec = () => {
       <div className="travel-card-con w-full">
         <div className="travel-card-head text-white flex justify-between items-end">
           <div className="description">
-            <h2 className='text-xl lg:text-3xl font-semibold'>Melbourne</h2>
-            <p className='text-sm lg:text-base font-semibold'>An amazing journey</p>
+            <h2 className='text-xl lg:text-xl font-semibold'>Melbourne</h2>
+            <p className='text-sm lg:text-base '>An amazing journey</p>
           </div>
           <div className="price">
-            <h2 className='font-semibold text-xl lg:text-3xl'>$700</h2>
+            <h2 className='font-semibold text-xl lg:text-xl'>$700</h2>
           </div>
         </div>
         <button className='w-full p-2 rounded mt-2 border-none bg-[#8dd3bb] text-sm lg:text-base'>
@@ -74,11 +74,11 @@ const FtravelCardSec = () => {
       <div className="travel-card-con w-full">
         <div className="travel-card-head text-white flex justify-between items-end">
           <div className="description">
-            <h2 className='text-xl lg:text-3xl font-semibold'>Melbourne</h2>
-            <p className='text-sm lg:text-base font-semibold'>An amazing journey</p>
+            <h2 className='text-xl lg:text-xl font-semibold'>Melbourne</h2>
+            <p className='text-sm lg:text-base '>An amazing journey</p>
           </div>
           <div className="price">
-            <h2 className='font-semibold text-xl lg:text-3xl'>$700</h2>
+            <h2 className='font-semibold text-xl lg:text-xl'>$700</h2>
           </div>
         </div>
         <button className='w-full p-2 rounded mt-2 border-none bg-[#8dd3bb] text-sm lg:text-base'>

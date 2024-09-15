@@ -6,7 +6,7 @@ import FbImg4 from "../../assets/flights/FbImg4.png"
 
 const FbookSec = () => {
   return (
-<div className='F-book-sec w-full lg:w-4/5 mx-auto px-4'>
+<div className='F-book-sec w-full lg:w-4/5 mx-auto px-4 lg:mt-8'>
   <div className="f-book-sec-nav lg:flex justify-between items-center p-4 lg:p-0">
     <div className="f-travel-card-sec-nav-con leading-8 lg:leading-10">
       <h2 className='text-2xl lg:text-4xl font-bold'>Fall into travel</h2>
@@ -14,12 +14,12 @@ const FbookSec = () => {
         Going somewhere to celebrate this season? Whether you’re going home or somewhere to roam, we’ve got the travel tools to get you to your destination.
       </p>
     </div>
-    <button className='f-travel-card-sec-nav-btn mt-4 lg:mt-0 text-sm lg:text-base px-4 py-2 bg-transparent border-2 border-[#8dd3bb] rounded'>
-      See All
-    </button>
+    <div>
+    <button className='f-travel-card-sec-nav-btn mt-4 lg:mt-0 text-sm lg:text-base px-4 py-2 bg-transparent border-2 border-[#8dd3bb] rounded'> See All</button>
+    </div>
   </div>
 
-  <div className="f-book-sec-card p-4 lg:p-0 lg:flex lg:justify-between flex-col lg:flex-row">
+  <div className="f-book-sec-card p-4 lg:p-0 lg:flex lg:justify-between flex-col lg:flex-row mt-4">
     <div className="main-card w-full lg:w-2/5 bg-[#8dd3bb] rounded-2xl p-6 flex flex-col justify-between mb-6 lg:mb-0">
       <div className="card-content flex flex-col mb-4">
         <div className="heading-tag-p flex justify-between mb-4">

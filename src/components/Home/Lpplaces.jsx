@@ -1,5 +1,5 @@
 import React from 'react'
-import HOTELS from '../Details'
+import HOTELS from '../../Details'
 
 
 
@@ -15,19 +15,19 @@ const Lpplaces = () => {
            </div>
 <div className="places-card-row-p"> 
 
-    <div className="places-card-row lg:grid md:grid  lg:grid-flow-row md:grid-flow-row lg:grid-cols-3 md:grid-cols-2 lg:gap-6">
+    <div className="places-card-row lg:grid md:grid  lg:grid-flow-row md:grid-flow-row lg:grid-cols-3 md:grid-cols-2 lg:gap-8">
         {HOTELS.map((hotel)=>(
             
         <div className="place-card mx-auto flex items-center p-4 m-2 rounded-lg shadow-2xl border max-w-max">
             <img src={hotel.image} alt={hotel.name} />
-            <div className="place-con ml-8">
-                <p className='text-[#797575] font-semibold text-xl'>{hotel.name}</p>
+            <div className="place-con ml-4">
+                <p className='text-[#797575] font-semibold text-lg'>{hotel.name}</p>
                 <ul className="place-features flex items-center mt-2">
-                  <li className='list-none mr-2 lg:mr-6'>{hotel.features[0]}</li>
-                  <span className="dot h-1 border-2 border-black rounded-full mr-2 lg:mr-6"></span>
-                  <li className='list-none mr-2 lg:mr-6'>{hotel.features[1]}</li>
-                  <span className="dot h-1 border-2 border-black rounded-full mr-2 lg:mr-6"></span>
-                  <li className='list-none mr-2 lg:mr-6'>{hotel.features[2]}</li>
+                  <li className='list-none mr-2 lg:mr-2'>{hotel.features[0]}</li>
+                  <span className="dot h-1 border-2 border-black rounded-full mr-2 lg:mr-2"></span>
+                  <li className='list-none mr-2 lg:mr-2'>{hotel.features[1]}</li>
+                  <span className="dot h-1 border-2 border-black rounded-full mr-2 lg:mr-2"></span>
+                  <li className='list-none mr-2 lg:mr-2'>{hotel.features[2]}</li>
                 </ul>
             </div>
         </div>

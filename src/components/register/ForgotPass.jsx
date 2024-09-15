@@ -72,7 +72,7 @@ const emailHandler = text =>{
 
       </div>
 
-      <div className="login-swiper-sec hidden lg:w-3/6 px-12">
+      <div className="login-swiper-sec hidden lg:block lg:w-3/6 px-12">
         <LogSwiper/>
       </div>
     </div>

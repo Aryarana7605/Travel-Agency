@@ -5,13 +5,10 @@
     padding: 0;
     font-family: "Montserrat";
 }
-body{
-    padding: 2rem;
-}
 /* Landing page nav bar */
 
 .lp-header{
-    background: linear-gradient(90deg, #00000038, #0000004f),url(../assets/LPheadbg.png);
+    background: linear-gradient(90deg, #00000038, #0000004f),url(../../assets/LPheadbg.png);
 }
 /* end */
 
@@ -23,9 +20,9 @@ body{
 
 /* main offerings section */
 .flight-offering{
-    background:linear-gradient(180deg, #0000002c , #000000a2),url(../assets/flightsMianOffering.png);
+    background:linear-gradient(180deg, #0000002c , #000000a2),url(../../assets/flightsMianOffering.png);
 }
 .hotel-offering{
-    background:linear-gradient(180deg, #0000002c , #000000a2),url(../assets/hotelMainOffering.png);
+    background:linear-gradient(180deg, #0000002c , #000000a2),url(../../assets/hotelMainOffering.png);
 }
 /* end */

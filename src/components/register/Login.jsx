@@ -79,9 +79,9 @@ const passwordHandler = event=>{
          </div>
          
          <div className="login-devider-hr flex justify-between items-center">
-          <span className='border w-32 lg:w-52 h-0'></span>
+          <span className='border w-32 lg:w-40 h-0'></span>
           <p className='p-0 m-0'>Or login with</p>
-          <span className='border w-32 lg:w-52 h-0'></span>
+          <span className='border w-32 lg:w-40 h-0'></span>
          </div>
 
          <div className="alt-login-icons flex justify-between mt-6  ">

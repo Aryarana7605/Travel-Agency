@@ -1,4 +1,4 @@
-import footerLogo from '../assets/footer logo.png'
+import footerLogo from '../../assets/footer logo.png'
 import "./lpStyle.css"
 import { TiSocialFacebookCircular } from "react-icons/ti";
 import { TiSocialTwitter } from "react-icons/ti";
@@ -7,7 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const LpFooter = () => {
   return (
-    <div className='footer lg:mt-60 lg:p-20 lg:pt-60 bg-[#8dd3bb] lg:flex items-baseline justify-evenly lg:rounded-3xl p-4 grid grid-flow-row grid-cols-2'>
+    <div className='footer lg:mt-60 lg:p-20 lg:pt-60 bg-[#8dd3bb] lg:flex items-baseline justify-evenly p-4 grid grid-flow-row grid-cols-2'>
 <div className="footer-sec footer-sec-1 flex-col justify-end items-center">
     <img className='logo h-10' src={footerLogo} alt="golobeLogo"/>
     <ul className="footer-social-logos text-2xl mt-2 flex">

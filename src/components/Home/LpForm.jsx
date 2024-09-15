@@ -6,6 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { FaPlus } from "react-icons/fa6";
 import { FaPaperPlane } from "react-icons/fa";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -28,16 +29,17 @@ const pickHandler = (event)=>{
   setPick(event.target.value) 
 }
 
+const navigate = useNavigate()
       return (
-<div className="lp-flight-details mb-4 w-full lg:w-4/5 m-auto shadow p-4 lg:p-8 rounded-2xl bg-white lg:absolute lg:bottom-40 lg:left-48">
+<div className="lp-flight-details mb-4 w-full lg:w-4/5 m-auto shadow p-4 lg:p-4 rounded-2xl bg-white lg:absolute lg:bottom-20 lg:left-40">
   
   <div className="lpform-tabs flex mb-8 justify-around lg:justify-start">
-    <i className='flex items-center p-2 bg-[#8dd3bb] rounded lg:bg-transparent text-xl'>
+    <i className='flex items-center p-2 bg-[#8dd3bb] rounded lg:bg-transparent text-base'>
       <IoAirplane />
-      <a className='flight-tag font-bold ml-2 font-sans' href=".">Flights</a>
+      <button className='flight-tag font-bold ml-2 font-sans ' onClick={()=>navigate("/flights")} >Flights</button>
     </i>
     <span className='hidden lg:inline-block bar border-2 border-gray-400 mx-4 lg:mx-8 rounded'></span>
-    <i className='flex items-center p-2 bg-[#8dd3bb] rounded lg:bg-transparent text-xl'>
+    <i className='flex items-center p-2 bg-[#8dd3bb] rounded lg:bg-transparent text-base'>
       <IoBed />
       <a className='font-bold ml-2 font-sans' href=".">Stays</a>
     </i>
@@ -87,9 +89,9 @@ const pickHandler = (event)=>{
     <button  className='promo-code-type flex items-center mr-4'>
       <span className='mr-2'><FaPlus/></span> Add Promo Code
     </button>
-    <a className='common-btn flex items-center p-4 border-none bg-[#8dd3bb] text-black font-semibold rounded-md' href=".">
+    <button onClick={()=>navigate("/flights-booking")} className='common-btn flex items-center p-2 border-none bg-[#8dd3bb] text-black font-semibold rounded-md text-base' >
       <span className='flex items-center mr-2'><FaPaperPlane /></span> Show Flights
-    </a>
+    </button>
   </div>
 </div>
 

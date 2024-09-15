@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import App from "./App";
-import Home from "../src/components/Home";
+import Home from "../src/components/Home/Home.jsx";
 import Login from "../src/components/register/Login";
 import Signup from "../src/components/register/Signup"
 import Setpass from "../src/components/register/SetPass"
@@ -16,6 +16,7 @@ import SetPass from "../src/components/register/SetPass"
 import VerifyCode from "../src/components/register/VerifyCode.jsx";
 import AddPayment from "./components/register/AddPayment.jsx";
 import Flights from "./components/flights/Flights.jsx";
+import FlightsBooking from "./components/flights/FlightsBooking.jsx";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -31,7 +32,13 @@ const router = createBrowserRouter(
       <Route path="/set-password" element={<SetPass/>} />
       <Route path="/verify-code" element={<VerifyCode/>} />
       <Route path="/add-payment-method" element={<AddPayment/>} />
+
+{/* flights section */}
+
       <Route path="/flights" element={<Flights/>} />
+      <Route path="/flights-booking" element={<FlightsBooking/>} />
+
+
     </Route>
   )
 );
