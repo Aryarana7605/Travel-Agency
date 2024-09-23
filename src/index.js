@@ -17,6 +17,10 @@ import VerifyCode from "../src/components/register/VerifyCode.jsx";
 import AddPayment from "./components/register/AddPayment.jsx";
 import Flights from "./components/flights/Flights.jsx";
 import FlightsBooking from "./components/flights/FlightsBooking.jsx";
+import FlightsCardDetail from "./components/Filters/FlightsCardDetail.jsx";
+import BookingDetails from "./components/flights/BookingDetails.jsx";
+import InvoicePage from "../src/components/Filters/InvoicePage.jsx"
+
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -37,7 +41,9 @@ const router = createBrowserRouter(
 
       <Route path="/flights" element={<Flights/>} />
       <Route path="/flights-booking" element={<FlightsBooking/>} />
-
+      <Route path="/flight-path" element={<FlightsCardDetail/>}/>
+      <Route path="/booking-details" element={<BookingDetails/>} />
+      <Route path="/booking-invoice" element={<InvoicePage/>} />
 
     </Route>
   )

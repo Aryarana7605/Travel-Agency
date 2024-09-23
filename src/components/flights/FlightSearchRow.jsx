@@ -64,7 +64,7 @@ const FlightSearchRow = () => {
     </div>
   </Box>
 
-<div className='bg-[#8dd3bb] text-3xl p-4 rounded-xl'>
+<div className='bg-[#8dd3bb] text-3xl p-2 lg:p-4 rounded-xl flex justify-center'>
 <FaSearch/>
 </div>
   

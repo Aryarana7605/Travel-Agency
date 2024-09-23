@@ -14,8 +14,8 @@ const LpSubscribe = () => {
         <h4 className='font-semibold text-xl lg:text-2xl text-black lg:mt-4'>The Travel</h4>
         <p className='font-semibold text-[#374a3b]'>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
         <form className=''>
-            <input className='sub-input mt-6 py-4 px-1 w-64 lg:w-96 pl-4 border-none rounded-md text-base ' type="text" placeholder='Your email address'/> 
-            <button className='sub-btn font-semibold p-4 text-white bg-[#112211] ml-2 rounded-lg border-none'>Subscribe</button>
+            <input className='sub-input mt-6 p-2 lg:py-4 px-1 w-64 lg:w-96 pl-4 border-none rounded-md text-base ' type="text" placeholder='Your email address'/> 
+            <button className='sub-btn font-semibold p-2 lg:p-4 text-white bg-[#112211] ml-2 rounded-lg border-none'>Subscribe</button>
         </form>
     </div>
       
