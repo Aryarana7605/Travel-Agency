@@ -20,6 +20,7 @@ import FlightsBooking from "./components/flights/FlightsBooking.jsx";
 import FlightsCardDetail from "./components/Filters/FlightsCardDetail.jsx";
 import BookingDetails from "./components/flights/BookingDetails.jsx";
 import InvoicePage from "../src/components/Filters/InvoicePage.jsx"
+import HotelLp from "./components/Hotels/HotelLp.jsx";
 
 
 const rootElement = document.getElementById("root");
@@ -44,6 +45,9 @@ const router = createBrowserRouter(
       <Route path="/flight-path" element={<FlightsCardDetail/>}/>
       <Route path="/booking-details" element={<BookingDetails/>} />
       <Route path="/booking-invoice" element={<InvoicePage/>} />
+
+{/* Hotels Section */}
+      <Route path="/hotels" element={<HotelLp/>} />
 
     </Route>
   )

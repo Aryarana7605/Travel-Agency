@@ -8,7 +8,7 @@ const LpNav = () => {
     <nav className="nav bg-transparent flex lg:justify-between lg:items-center py-2 px-6">
     <ul className='text-white lg:flex items-center'>
     <li className='flex items-center' onClick={()=>navigate("/flights")}><span className='text-3xl'><IoIosAirplane/></span><button className='lg:ml-2 font-semibold' href=".">Find Flight</button></li>
-    <li className='flex lg:ml-4 items-center'><span className='text-xl'><IoBed/></span><a className='lg:ml-2 font-semibold' href=".">Find Stays</a></li>
+    <li className='flex lg:ml-4 items-center' onClick={()=>navigate("/hotels")}><span className='text-xl'><IoBed/></span><button className='lg:ml-2 font-semibold' href=".">Find Stays</button></li>
   </ul>
   <img className='logo h-8' src={whiteGolobeLogo} alt="logo"/>
   <ul className='lp-booking-nav-ul-2 lg:flex items-center'>

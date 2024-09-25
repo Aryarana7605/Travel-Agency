@@ -41,7 +41,7 @@ const navigate = useNavigate()
     <span className='hidden lg:inline-block bar border-2 border-gray-400 mx-4 lg:mx-8 rounded'></span>
     <i className='flex items-center p-2 bg-[#8dd3bb] rounded lg:bg-transparent text-base'>
       <IoBed />
-      <a className='font-bold ml-2 font-sans' href=".">Stays</a>
+      <button className='font-bold ml-2 font-sans'  onClick={()=>navigate("/hotels")}>Stays</button>
     </i>
   </div>
 
