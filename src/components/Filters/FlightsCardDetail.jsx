@@ -1,4 +1,3 @@
-import Fnav from "../flights/Fnav"
 import FlightPathDetails from "./FlightCardCon.jsx/FlightPathStick"
 import EmirateAirplaneImg from "../flights/FlightsImg/emiratePlane.png"
 import FlightFeatures from "./FlightCardCon.jsx/FlightFeatures"
@@ -6,13 +5,14 @@ import FlightPolicies from "./FlightCardCon.jsx/FlightPolicies"
 import FlightDetailCard from "./FlightCardCon.jsx/FlightDetailCard"
 import LpSubscribe from "../Home/LpSubscribe"
 import LpFooter from "../Home/LpFooter"
+import LoginNav from "../Hotels/HotelCom.jsx/LoginNav"
 
 const FlightsCardDetail = () => {
   return (
     <div >
 
 <div className="shadow-lg">
-    <Fnav/>
+    <LoginNav/>
 </div>
 <div>
     <FlightPathDetails/>

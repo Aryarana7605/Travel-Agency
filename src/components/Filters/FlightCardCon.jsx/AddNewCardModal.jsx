@@ -7,7 +7,6 @@ const AddNewCardModal = ({ onClose }) => {
     cvc: "",
     nameOnCard: "",
     country: "United States",
-    saveInfo: false,
   });
 
   const handleChange = (e) => {

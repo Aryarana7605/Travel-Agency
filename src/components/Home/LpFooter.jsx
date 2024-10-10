@@ -8,7 +8,7 @@ import { FaYoutube } from "react-icons/fa";
 const LpFooter = () => {
   return (
 <div className="footer bg-[#8dd3bb] p-6 lg:p-20 lg:mt-60 lg:pt-52 pb-8 lg:pb-6 max-h-max">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-20 pb-6">
+  <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-20 pb-6">
     
     <div className="footer-sec footer-sec-1 flex flex-col items-center lg:items-start">
       <img className="logo h-10" src={footerLogo} alt="golobeLogo" />

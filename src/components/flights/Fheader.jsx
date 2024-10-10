@@ -1,12 +1,13 @@
-import Fnav from "./Fnav"
+
 import "./flights.css"
 import bgImg from "../../assets/flights/airplanebg.png"
+import LoginNav from "../Hotels/HotelCom.jsx/LoginNav"
 
 const Fheader = () => {
   return (
     <div className="fheader h-[65vh]" >
           <div className="bg-white ">
-            <Fnav/>
+            <LoginNav/>
           </div>
           <div className="  w-full h-[57vh] relative">
             <img className="z-0 absolute" src={bgImg} alt="" style={{height:"100%", width:"100%", objectFit:"cover"}}/>

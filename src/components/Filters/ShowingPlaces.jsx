@@ -1,26 +1,3 @@
-// import React from "react";
-
-// const ShowingPlaces = () => {
-//   return (
-//     <div className="flex items-center justify-between p-4">
-//       <div className="lg:text-lg text-sm">
-//         Showing <span className="font-semibold">4</span> of{" "}
-//         <span className="text-red-500 font-semibold">257 places</span>
-//       </div>
-
-//       <div className="flex items-center space-x-2">
-//         <span className="text-lg hidden lg:block">Sort by</span>
-//         <button className="font-semibold lg:text-lg text-base flex items-center">
-//           Recommended <span className="ml-1">▼</span>
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ShowingPlaces;
-
-
 import React, { useState } from "react";
 
 const ShowingPlaces = () => {

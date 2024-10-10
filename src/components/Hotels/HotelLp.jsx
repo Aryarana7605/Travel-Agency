@@ -14,8 +14,8 @@ const HotelLp = () => {
       <LoginNav />
       {/* <ProfileMenu/> */}
       <HotelHeader/>
-      <RecentSearchesHotels/>
       <HotelsSearchForm/>
+      <RecentSearchesHotels/>
       <FtravelCardSec/>
       <FbookSec/>
       <LpSubscribe/>

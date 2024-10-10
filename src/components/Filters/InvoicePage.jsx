@@ -1,14 +1,14 @@
 import InvoiceDownload from "../Filters/FlightCardCon.jsx/InvoiceDownload"
-import Fnav from "../flights/Fnav"
 import BoardingPass from "./FlightCardCon.jsx/BoardingPass"
 import InvoiceTC from "./FlightCardCon.jsx/InvoiceT&C"
 import LpSubscribe from "../Home/LpSubscribe"
 import LpFooter from "../Home/LpFooter"
+import LoginNav from "../Hotels/HotelCom.jsx/LoginNav"
 
 const InvoicePage = () => {
   return (
     <div>
-        <Fnav/>
+        <LoginNav/>
         <div className="w-4/5 mx-auto">
       <InvoiceDownload/>
       <BoardingPass/>

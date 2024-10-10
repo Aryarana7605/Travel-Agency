@@ -1,19 +1,19 @@
 import FlightDetailCard from "../Filters/FlightCardCon.jsx/FlightDetailCard";
 import FlightPayOpt from "../Filters/FlightCardCon.jsx/FlightPayOpt";
 import FlightsPriceCard from "../Filters/FlightCardCon.jsx/FlightsPriceCard"
-import Fnav from "../flights/Fnav"
 import { IoIosArrowForward } from "react-icons/io";
 import LpSubscribe from "../Home/LpSubscribe"
 import LpFooter from "../Home/LpFooter"
 import BookingLogin from "../Filters/FlightCardCon.jsx/BookingLogin";
 import PayCardSelection from "../Filters/FlightCardCon.jsx/PayCardSelection";
+import LoginNav from "../Hotels/HotelCom.jsx/LoginNav";
 
 
 const BookingDetails = () => {
   const userLogin = false;
   return (
     <div>
-      <Fnav/>
+      <LoginNav/>
 
       <div className="w-[90%] mx-auto">
 
@@ -33,7 +33,6 @@ const BookingDetails = () => {
       <div className="mb-8">
        <FlightsPriceCard/>      
        </div>
-       
        
 </div>
       </div>

@@ -28,7 +28,7 @@ const RecentSearchesHotels = () => {
   ];
 
   return (
-    <div className="py-10 w-4/5 lg:mx-auto p-6">
+    <div className="py-10 w-4/5 lg:mx-auto p-6 lg:mt-40">
       <h2 className="text-2xl font-semibold mb-6">Your recent searches</h2>
       <div className="lg:flex justify-between w-full lg:space-x-8 lg:grid-cols-none grid grid-flow-row grid-cols-2">
         {searches.map((search, index) => (

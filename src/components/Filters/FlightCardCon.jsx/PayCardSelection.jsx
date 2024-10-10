@@ -48,7 +48,7 @@ const PayCardSelection = () => {
         onClick={() => setSelectedCard('new')}
       >
         <div className="flex flex-col items-center justify-center text-center" onClick={openModal}>
-          <div className="flex items-center justify-center h-12 w-12 rounded-full border border-green-500 text-green-500">
+          <div className="flex items-center justify-center h-12 w-12 rounded-full border border-[#8dd3bb] text-[#8dd3bb]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
             </svg>

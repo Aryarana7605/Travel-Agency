@@ -1,4 +1,3 @@
-import Fnav from "./Fnav"
 import FlightSearchRow from './FlightSearchRow'
 import FlightsFilterSec from "../Filters/FlightsFilterSec"
 import FlightsCard from "../Filters/FlightsCards"
@@ -6,13 +5,14 @@ import FlightsSorting from "../Filters/FlightsSorting"
 import LpSubscribe from "../Home/LpSubscribe"
 import LpFooter from "../Home/LpFooter"
 import ShowingPlaces from "../Filters/ShowingPlaces"  
+import LoginNav from "../Hotels/HotelCom.jsx/LoginNav"
 
 const FlightsBooking = () => {
   
   return (
     <div>
        <div>
-      <Fnav/>
+      <LoginNav/>
        </div>
 
       <div className='lg:mt-20 p-4 lg:w-[90%] mx-auto lg:pt-12 lg:pr-12 rounded-xl' style={{boxShadow:"0px 0px 10px gray"}}>
