@@ -26,9 +26,9 @@ const FlightPayOpt = () => {
         className={`p-4 rounded-lg mb-4 ${selectedOption === 'part' ? 'bg-green-200' : 'bg-white'} flex justify-between items-center cursor-pointer`} 
         onClick={() => setSelectedOption('part')}
       >
-        <div>
+        <div >
           <h3 className="font-semibold text-lg">Pay part now, part later</h3>
-          <p className="text-sm">Pay $207.43 now, and the rest ($207.43) will be automatically charged on Nov 14, 2022.</p>
+          <p className="text-sm mr-1">Pay $207.43 now, and the rest ($207.43) will be automatically charged on Nov 14, 2022.</p>
         </div>
         <input 
           type="radio" 

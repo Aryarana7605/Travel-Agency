@@ -31,19 +31,19 @@ const AvailableRooms = () => {
         {rooms.map((room, index) => (
           <div
             key={index}
-            className="flex items-center justify-between p-4 border-b border-gray-200"
+            className="flex items-center justify-between lg:p-4 p-2 border-b border-gray-200"
           >
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 gap-2">
               <img
                 src={room.image}
                 alt={room.title}
-                className="w-12 h-12 object-cover rounded"
+                className="w-12 h-12 object-cover rounded"                
               />
-              <p>{room.title}</p>
+              <p className="text-xs lg:text-lg">{room.title}</p>
             </div>
-            <div className="flex items-center space-x-4">
-              <p className="text-lg font-bold text-gray-800">${room.price} <span className="text-sm">/night</span></p>
-              <button className="bg-[#8dd3bb]  px-4 font-medium py-2 rounded-lg hover:bg-[#8dd]">
+            <div  className="flex lg:flex-row  flex-col items-end lg:items-center space-x-4">
+              <p className="lg:text-2xl text-xs font-bold text-gray-800 text-right">${room.price} <span className="text-sm">/night</span></p>
+              <button className="bg-[#8dd3bb] px-4 font-medium py-2 rounded-lg hover:bg-[#8dd] lg:text-lg text-xs">
                 Book now
               </button>
             </div>

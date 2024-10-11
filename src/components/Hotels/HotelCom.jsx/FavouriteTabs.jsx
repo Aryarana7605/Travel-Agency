@@ -34,8 +34,7 @@ const FavouriteTabs = () => {
       <div className="mt-4">
         {activeTab === 'Flights' && (
           <div>
-            <h2 className="text-lg font-semibold">Flights Content</h2>
-            <p className="text-gray-500">This is the Flights panel where you can see your marked flights.</p>
+            <h2 className="text-lg font-semibold">Nothing here to show you!</h2>          
           </div>
         )}
 

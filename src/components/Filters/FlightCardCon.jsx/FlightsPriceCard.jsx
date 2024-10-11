@@ -13,8 +13,8 @@ const FlightsPriceCard = () => {
                 <h2 className="text-2xl font-semibold">Emirates A380 Airbus</h2>
                 <div className="rev flex gap-4 mt-4 items-center">
                    <span className="border-2 border-[#8dd3bb] p-2 text-sm rounded-lg">4.2</span>
-                   <span className="text-xl font-semibold">Very Good</span>
-                   <span className="text-xl font-medium">54 reviews</span>
+                   <span className="lg:text-base text-sm font-semibold">Very Good</span>
+                   <span className="lg:text-base text-sm font-medium">54 reviews</span>
                 </div>
             </div>
         </div>

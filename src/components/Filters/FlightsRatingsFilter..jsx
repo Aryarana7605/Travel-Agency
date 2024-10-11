@@ -3,15 +3,15 @@ import { Box, Typography, Button, IconButton, Collapse } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const FlightsRatingsFilter = () => {
-  const [selectedRating, setSelectedRating] = useState(0); // Default to 0+
-  const [open, setOpen] = useState(false); // For collapse state
+  const [selectedRating, setSelectedRating] = useState(0);
+  const [open, setOpen] = useState(false); 
 
   const handleRatingSelect = (rating) => {
-    setSelectedRating(rating); // Set the selected rating
+    setSelectedRating(rating); 
   };
 
   const handleToggle = () => {
-    setOpen((prevOpen) => !prevOpen); // Toggle collapse
+    setOpen((prevOpen) => !prevOpen); 
   };
 
   return (
@@ -24,7 +24,7 @@ const FlightsRatingsFilter = () => {
       </Box>
 
       <Collapse in={open}>
-        <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+        <Box sx={{ display: 'flex', gap: 1, mt: 2 }}>
           {[0, 1, 2, 3, 4].map((rating) => (
             <Button
               key={rating}

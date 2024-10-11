@@ -8,7 +8,7 @@ const Favourites = () => {
   return (
     <div>
     <LoginNav/>      
-    <div className="w-4/5 mx-auto">
+    <div className="lg:w-4/5 w-full mx-auto">
     <FavouriteTabs/>
     </div>
     <LpSubscribe/>

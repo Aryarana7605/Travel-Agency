@@ -27,7 +27,7 @@ const LoginNav = () => {
     <div className="bg-white">
       <nav className="nav bg-transparent flex justify-between items-center py-4 px-4 lg:px-12">
         
-        {/* Large screen links */}
+        
         <ul className="hidden lg:flex text-black items-center">
           <li
             className="flex items-center text-black cursor-pointer"
@@ -53,7 +53,7 @@ const LoginNav = () => {
           </li>
         </ul>
 
-        {/* Logo */}
+        
         <img
           className="logo h-6 lg:h-8 mx-auto lg:mx-0"
           src={blackGolobeLogo}
@@ -61,7 +61,7 @@ const LoginNav = () => {
           onClick={() => navigate("/")}
         />
 
-        {/* Large screen user account section */}
+        
         {Users.map((user) => (
           <ul className="hidden lg:flex items-center">
             <li
@@ -83,7 +83,7 @@ const LoginNav = () => {
           </ul>
         ))}
 
-        {/* Mobile menu toggle button */}
+        
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="text-2xl">
             {isOpen ? <IoMdClose /> : <IoMdMenu />}
@@ -91,7 +91,7 @@ const LoginNav = () => {
         </div>
       </nav>
 
-      {/* Side menu for mobile */}
+      
       <div
         className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transition-transform duration-300 ease-in-out ${
           isOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
@@ -145,7 +145,7 @@ const LoginNav = () => {
         </ul>
       </div>
 
-      {/* Background overlay */}
+      
       {isOpen && (
         <div
           className="fixed inset-0 bg-black opacity-50 z-40"

@@ -3,24 +3,10 @@ import { FiShare2 } from "react-icons/fi";
 
 const FlightInfoSection = () => {
   return (
-    <div className="mt-8 flex items-center justify-between p-4 bg-white rounded-md shadow-md  mx-auto">
+    <div className="mt-8 flex flex-col lg:flex-row items-end lg:items-center justify-between p-4 bg-white rounded-md shadow-md  mx-auto">
       <div>
         <h3 className="text-lg font-semibold text-gray-900">Emirates A380 Airbus</h3>
-        <p className="text-sm text-gray-500 flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-4 h-4 mr-1"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M16.07 13.86A4.13 4.13 0 1112 9.73a4.13 4.13 0 014.07 4.13z"
-            />
-          </svg>
+        <p className="text-sm text-gray-500 flex items-center">      
           Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437
         </p>
       </div>

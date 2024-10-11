@@ -24,7 +24,7 @@ const BookingDetails = () => {
 
 <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
 
-      <div className="lg:w-4/5">
+      <div className="lg:w-[70%]">
         <FlightDetailCard/>
         <FlightPayOpt/>
        {userLogin && <BookingLogin/>}

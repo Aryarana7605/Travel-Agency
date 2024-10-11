@@ -2,7 +2,7 @@ import React from 'react'
 
 const InvoiceTC = () => {
   return (
-    <div>
+    <div className='lg:mb-0 mb-8'>
       <h1 className='text-2xl font-semibold mt-8'>Terms and Conditions</h1>
       <h3 className='text-xl font-medium my-4'>Payments</h3>
       <ul>

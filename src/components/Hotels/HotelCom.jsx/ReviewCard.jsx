@@ -39,7 +39,7 @@ const ReviewCard = () => {
       </div>
     </div>
     ))}
-    <div className="flex gap-4 justify-center items-center text-center">
+    <div className="flex gap-4 justify-center items-center text-center mb-8 lg:mb-0">
       <button><FaAngleLeft/></button>
       <p>1 of 40</p>
       <button><FaAngleRight/></button>

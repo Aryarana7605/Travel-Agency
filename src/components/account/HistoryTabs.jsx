@@ -30,7 +30,7 @@ const HistoryTabs = () => {
         </button>
         </div>
 
-        <div className='mt-4 p-8'>
+        <div className='mt-4 lg:p-8'>
         {activeTab === "Flights" && (
             <FlightHistoryTicket/>
         )}
