@@ -18,7 +18,6 @@ const PaymentMethods = () => {
   return (
     <div className="p-4 w-full mt-8 mx-auto bg-white rounded-lg shadow-md flex flex-col lg:flex-row gap-6 lg:h-60">
       
-
       <div
         className={`p-4 w-full lg:w-[30%] rounded-lg bg-[#8dd3bb] flex flex-col justify-between`}
         onClick={() => setSelectedCard('visa')}
@@ -33,7 +32,6 @@ const PaymentMethods = () => {
           <FaCcVisa className="h-6 w-10" />
         </div>
       </div>
-
 
       <div
         className={`p-4 w-full lg:w-[30%] flex justify-center items-center border-2 border-dashed rounded-lg border-[#8dd3bb]`}
